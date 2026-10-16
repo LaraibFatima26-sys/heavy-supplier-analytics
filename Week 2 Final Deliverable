@@ -1,0 +1,111 @@
+# Week 2 Final Deliverable
+## Heavy Supplier, Inventory & Warehouse Analytics
+
+### 1. Executive Summary
+
+During Week 2, I developed an analytical Excel workbook, `heavy_supplier_inventory_analytics_week2.xlsx`, to consolidate and analyze procurement, supplier fulfillment, sales performance, profitability, and product inventory data.
+
+The primary objective was to improve data quality, automate operational calculations, and establish key performance indicators (KPIs) to support data-driven business decisions.
+
+Data inconsistencies, including `#VALUE!` errors and unformatted date serials, were addressed. Dynamic Excel formulas were implemented to support automated calculations and improve the reliability of the analysis.
+
+### 2. Project Objectives
+
+- Clean and standardize procurement and sales datasets.
+- Automate purchase order fulfillment tracking.
+- Calculate supplier lead times and monitor delivery performance.
+- Analyze sales revenue, cost of goods sold, and gross profit.
+- Develop product-level sales summaries.
+- Apply ABC inventory classification and stock movement categories.
+
+### 3. Key Activities and Implementation
+
+#### 3.1 Purchase Orders & Fulfillment Analysis
+
+**Dataset:** `purchase_orders_lines`
+
+The purchase order dataset was prepared to evaluate supplier delivery performance and order fulfillment status.
+
+Key activities:
+- Implemented dynamic fulfillment status calculations using Excel's `IF` function.
+- Classified purchase order lines as *Fulfilled* or *Pending* based on ordered and received quantities.
+- Standardized purchase order and supplier receipt dates.
+- Calculated supplier lead time by measuring the difference between receipt dates and purchase order dates.
+- Corrected data inconsistencies and removed redundant date columns.
+
+**Outcome:** Established a formula-driven approach to monitoring fulfillment status and measuring supplier delivery lead times.
+
+#### 3.2 Sales Orders & Revenue Analysis
+
+**Dataset:** `sales_orders_lines`
+
+The sales dataset was enhanced to evaluate revenue, product costs, and profitability.
+
+Key activities:
+- Calculated Cost of Goods Sold (COGS) using quantity and unit cost.
+- Calculated profit amount by subtracting COGS from line revenue.
+- Standardized gross profit percentage calculations.
+- Formatted transaction dates to support time-based sales analysis.
+
+**Formulas implemented:**
+
+- **COGS:** Quantity × Unit Cost
+- **Profit Amount:** Line Total − COGS
+- **Gross Profit Percentage:** (Unit Price − Unit Cost) ÷ Unit Price × 100
+
+**Outcome:** Prepared the sales dataset for product profitability analysis and future revenue reporting.
+
+#### 3.3 Product Analytics & Inventory Classification
+
+**Dataset:** `Product_Analytics`
+
+Product-level metrics were calculated to support revenue analysis and inventory prioritization.
+
+Key activities:
+- Aggregated total units sold by product ID using `SUMIF`.
+- Calculated total revenue for individual products.
+- Applied ABC Pareto classification based on cumulative revenue contribution:
+  - **Class A:** Products contributing approximately the first 80% of cumulative revenue.
+  - **Class B:** Products contributing the next 15%.
+  - **Class C:** Products contributing the remaining 5%.
+- Classified product movement into Fast-Moving, Medium-Moving, Slow-Moving, and Dead Stock categories according to the project's classification criteria.
+
+**Outcome:** Created a structured product analytics framework to help identify high-revenue products and distinguish inventory movement patterns.
+
+### 4. Data Quality and Validation
+
+The following data preparation activities were completed:
+
+- Corrected spreadsheet calculation errors.
+- Standardized date formats.
+- Established dynamic formulas for recurring calculations.
+- Removed redundant date columns.
+- Organized the analytical workbook into relevant worksheets.
+
+These improvements enhanced the consistency and usability of the workbook.
+
+### 5. Final Deliverable
+
+**File:** `heavy_supplier_inventory_analytics_week2.xlsx`
+
+**Submission Directory:** `week-02/`
+
+**Platform:** Team GitHub Repository
+
+The workbook consolidates procurement fulfillment, supplier lead time, sales profitability, and product-level inventory analytics into a structured analytical deliverable.
+
+### 6. Business Value
+
+The Week 2 deliverable establishes a foundation for:
+
+- Monitoring supplier fulfillment and delivery timelines.
+- Understanding sales revenue and product profitability.
+- Identifying products with the largest cumulative revenue contribution.
+- Reviewing inventory movement patterns.
+- Supporting future supplier, inventory, and warehouse performance reporting.
+
+### 7. Conclusion
+
+Week 2 focused on data cleaning, Excel formula automation, procurement analysis, sales profitability calculations, and product-level inventory classification. The resulting workbook provides a structured foundation for further supply-chain analytics and reporting.
+
+**Status:** Week 2 analytical workbook prepared for project submission and review.

@@ -1,0 +1,13 @@
+## Conclusion & Expected Architecture Results
+
+The Object-Oriented Design (OOD) model for the Media Production Management System demonstrates clean software architecture and strong adherence to core OOP principles:
+
+* **Modularity & Reusability:** Leveraging inheritance via the `CrewMember` base class ensures clean code reuse and scalability for adding new technical production roles.
+* **Encapsulation & High Cohesion:** Clearly demarcating attributes and methods per entity isolates functional responsibilities, minimizing coupling between management and creative workflows.
+* **Structural Integrity:** Composition relationships between `ScreenPlay`, `Scene`, and `Dialogue` accurately reflect complex domain hierarchies in media operations.
+* **Maintainability:** Standardized UML modeling allows software engineers to easily transition from design to implementation phases in languages like C++, Java, or Python.
+
+---
+
+### 📄 Complete Project Documentation
+👉 [View Full OOP & UML Case Study on Google Docs](https://docs.google.com/document/d/1F1CAlxzp1NG526sA89HNqovkibwiVB_WWhDhY8tlVHU/edit?usp=sharing)
